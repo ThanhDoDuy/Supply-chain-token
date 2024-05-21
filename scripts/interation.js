@@ -27,7 +27,7 @@ async function interact(){
     if (myPrivateKey) {
         await web3.eth.accounts.wallet.add("0x" + myPrivateKey);
     } else {
-        throw new Error('Invalid private key');
+        throw new Error('Invalid pri7vate key');
     }
     receiverBalanceBefore = await SupplyChainContract.methods.balanceOf(receiverAddr).call();
 
